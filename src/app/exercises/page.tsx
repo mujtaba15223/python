@@ -1,12 +1,12 @@
 import CodeCompassLayout from "@/components/code-compass-layout";
-import { DashboardClient } from "@/components/dashboard-client";
+import { ExercisesClient } from "@/components/exercises-client";
 import { Suspense } from "react";
 
-export default function DashboardPage() {
+export default function ExercisesPage() {
   return (
-    <CodeCompassLayout title="Dashboard">
+    <CodeCompassLayout title="Exercises">
       <Suspense fallback={<div>Loading...</div>}>
-        <DashboardClient />
+        <ExercisesClient />
       </Suspense>
     </CodeCompassLayout>
   );
